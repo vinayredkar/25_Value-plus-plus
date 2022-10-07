@@ -5,10 +5,7 @@ body {
     background: #fff;
 	font-family: 'Thasadith', sans-serif;
 }
-/* Navbar */
-.navbar navbar-expand-lg navbar-dark bg-dark{
-	color: #009f4d;
-}
+
 html {
   scroll-behavior: smooth;
 }
@@ -375,7 +372,7 @@ li > a:only-child:after { content: ''; }
 }
 
 .banner-top {
-    background: url(../images/3.jpg) no-repeat center;
+    background: url(../images/2.jpg) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -383,7 +380,7 @@ li > a:only-child:after { content: ''; }
     -moz-background-size: cover;
 }
 
-.banner-top1 {
+/* .banner-top1 {
     background: url(../images/1.jpg) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
@@ -399,7 +396,7 @@ li > a:only-child:after { content: ''; }
     -moz-background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
-}
+} */
 
 .banner-top3 {
     background: url(../images/2.jpg) no-repeat center;
