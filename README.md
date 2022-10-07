@@ -1,12 +1,12 @@
 # 25_Value-plus-plus
-MetaData farmer assistant 
+MetaData Farmer Assistant 
 
 
 Team:
-Vinay Redkar
-Kaustubh Mayekar
-Sameer Kirwale
-Siddhesh Wayal
+1. Vinay Redkar
+2. Kaustubh Mayekar
+3. Sameer Kirwale
+4. Siddhesh Wayal
 
 Project name: Metadata Farmer Assistance
 
