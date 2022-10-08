@@ -20,7 +20,7 @@ from utils.model import ResNet9
 
 # Loading plant disease classification model
 
-disease_detect_classes = ['Apple___Apple_scab',
+disease_classes = ['Apple___Apple_scab',
                           'Apple___Black_rot',
                           'Apple___Cedar_apple_rust',
                           'Apple___healthy',
@@ -60,7 +60,7 @@ disease_detect_classes = ['Apple___Apple_scab',
                           'Tomato___healthy']
 
 disease_model_path = 'models/plant_disease_model.pth'
-disease_model = ResNet9(3, len(disease_detect_classes))
+disease_model = ResNet9(3, len(disease_classes))
 disease_model.load_state_dict(torch.load(
     disease_model_path, map_location=torch.device('cpu')))
 disease_model.eval()
@@ -119,7 +119,7 @@ def predict_image(img, model=disease_model):
     yb = model(img_u)
     # Pick index with highest probability
     _, preds = torch.max(yb, dim=1)
-    prediction = disease_detect_classes[preds[0].item()]
+    prediction = disease_classes[preds[0].item()]
     # Retrieve the class label
     return prediction
 
@@ -148,7 +148,7 @@ def crop_recommend():
     title = 'Farm-Z : Yield Prediction'
     return render_template('crop.html', title=title)
 
-# render fertilizer recommendation form page
+#render fertilizer recommendation form page
 
 
 @ app.route('/fertilizer')
