@@ -134,7 +134,7 @@ app = Flask(__name__)
 
 @ app.route('/')
 def home():
-    title = 'Yield_Predictor - Home'
+    title = 'Farm-Z : Home'
     return render_template('index.html', title=title)
 #about us
 @ app.route('/about-us')
@@ -145,7 +145,7 @@ def about_us():
 
 @ app.route('/crop-recommend')
 def crop_recommend():
-    title = 'Yield Predictor - Crop Recommendation'
+    title = 'Farm-Z : Yield Prediction'
     return render_template('crop.html', title=title)
 
 # render fertilizer recommendation form page
@@ -153,7 +153,7 @@ def crop_recommend():
 
 @ app.route('/fertilizer')
 def fertilizer_recommendation():
-    title = 'Yield Predictor - Fertilizer Suggestion'
+    title = 'Farm-Z : Weed Detection'
 
     return render_template('fertilizer.html', title=title)
 
@@ -171,7 +171,7 @@ def fertilizer_recommendation():
 
 @ app.route('/crop-predict', methods=['POST'])
 def crop_prediction():
-    title = 'Yield Predictor - Crop Recommendation'
+    title = 'Farm-Z : Disease Detection'
 
     if request.method == 'POST':
         N = int(request.form['nitrogen'])
@@ -200,7 +200,7 @@ def crop_prediction():
 
 @ app.route('/fertilizer-predict', methods=['POST'])
 def fert_recommend():
-    title = 'Yield Predictor - Fertilizer Suggestion'
+    title = 'Farm-Z - Weed Detect & Suggestions'
 
     crop_name = str(request.form['cropname'])
     N = int(request.form['nitrogen'])
@@ -244,7 +244,7 @@ def fert_recommend():
 
 @app.route('/disease-predict', methods=['GET', 'POST'])
 def disease_prediction():
-    title = 'Yield Predictor - Disease Detection'
+    title = 'Farm-Z : Disease Detection'
 
     if request.method == 'POST':
         if 'file' not in request.files:
