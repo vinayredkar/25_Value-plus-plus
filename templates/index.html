@@ -40,24 +40,14 @@
 				<a href="{{ url_for('crop_recommend') }}">
 					<div class="blog-info">
 
-						<h4>Crop</h4>
+						<h4>Yield Prediction</h4>
 
-						<p class="mt-2"> Recommendation about the type of crops to be cultivated which is best suited
-							for the respective conditions</p>
+						<p class="mt-2"> Predict the yield of the crop based on various parameters</p>
 					</div>
 				</a>
 			</div>
-			<div class="col-lg-4 col-md-6 blog-middle mb-lg-0 mb-sm-5 pb-lg-0 pb-md-5">
-				<img src="{{ url_for('static', filename='images/s2.jpg') }}" class="img-fluid" alt="" />
-				<a href="{{ url_for('fertilizer_recommendation') }}">
-					<div class="blog-info">
-						<h4>Fertilizer</h4>
-						<p class="mt-2">Recommendation about the type of fertilizer best suited for the particular soil
-							and the recommended crop</p>
-					</div>
-				</a>
-			</div>
-			<div class="col-lg-4 col-md-6 blog-right mt-lg-0 mt-5 pt-lg-0 pt-md-5">
+			
+			<div class="col-lg-4 col-md-6 blog-right mt-lg-0 mt-5 pt-lg-0 pt-md-5" style="margin:auto">
 
 				<img src="{{ url_for('static', filename='images/s4.jpg') }}" class="img-fluid" alt="">
 
@@ -66,6 +56,16 @@
 					<div class="blog-info">
 						<h4>Crop Disease</h4>
 						<p class="mt-2">Predicting the name and causes of crop disease and suggestions to cure it</p>
+					</div>
+				</a>
+			</div>
+
+			<div class="col-lg-4 col-md-6 blog-middle mb-lg-0 mb-sm-5 pb-lg-0 pb-md-5">
+				<img src="{{ url_for('static', filename='images/s2.jpg') }}" class="img-fluid" alt="" />
+				<a href="{{ url_for('fertilizer_recommendation') }}">
+					<div class="blog-info">
+						<h4>Weed Detection</h4>
+						<p class="mt-2">Detects the weed based on if the nitrogen value in crop is more</p>
 					</div>
 				</a>
 			</div>
