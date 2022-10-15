@@ -1,6 +1,6 @@
 # 25_Value-plus-plus
 MetaData Farmer Assistant 
-
+Hii, this is We Team here creating a project for VCET-HACKTHON 2022. This is a machine learning project conisting python libraries.
 
 Team:
 1. Vinay Redkar
